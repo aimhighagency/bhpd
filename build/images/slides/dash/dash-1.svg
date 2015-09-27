@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.15;fill-rule:evenodd;clip-rule:evenodd;fill:#3D3D3D;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#3D3D3D;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E9E9E9;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#89C9E5;}
+	.st4{opacity:8.000000e-02;fill-rule:evenodd;clip-rule:evenodd;fill:#3D3D3D;}
+</style>
+<g>
+	<path class="st0" d="M509.2,864c130.3,0,235.9,4.7,235.9,10.5c0,5.8-105.6,10.5-235.9,10.5c-130.3,0-235.9-4.7-235.9-10.5
+		C273.3,868.7,378.9,864,509.2,864z"/>
+	<path class="st1" d="M34.8,678.5V136c0-11.6,9.4-21,21-21h888.5c11.6,0,21,9.4,21,21v542.5H34.8z"/>
+	<path class="st2" d="M944.2,762.4H55.8c-11.6,0-21-9.4-21-21v-62.9h930.4v62.9C965.2,753,955.8,762.4,944.2,762.4z"/>
+	<path class="st2" d="M351.9,872v-11.5l36.7-4.5l25.3-96.7h187.8l25.3,96.7l36.7,4.5V872H351.9z"/>
+	<path class="st2" d="M509.2,128.4c2.7,0,4.9,2.2,4.9,4.9c0,2.7-2.2,4.9-4.9,4.9c-2.7,0-4.9-2.2-4.9-4.9
+		C504.3,130.6,506.5,128.4,509.2,128.4z"/>
+	<path class="st3" d="M936.4,151.7v490.1H63.6V151.7H936.4z"/>
+	<path class="st4" d="M410.6,777.6l3.4-18.3h187.8l3.4,18.3H410.6z"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M936.4,151.7v490.1H63.6V151.7H936.4z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_2_);">
+		
+			<image style="overflow:visible;" width="1186" height="742" xlink:href="../../../../../../Desktop/dash-1.jpg"  transform="matrix(0.7372 0 0 0.7372 64 151)">
+		</image>
+	</g>
+	<g style="clip-path:url(#SVGID_2_);">
+		
+			<image style="overflow:visible;" width="1186" height="742" xlink:href="../../../../../../Desktop/dash-2.jpg"  transform="matrix(0.7372 0 0 0.7372 64 150)">
+		</image>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "name": "templates",
+  "version": "0.0.0",
+  "authors": [
+    "BE Design <info@b-ed.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizer": "~2.8.2",
+    "imagesloaded": "~3.1.8",
+    "instafeed.js": "~1.3.2",
+    "masonry": "~3.3.1",
+    "scrollmagic": "~2.0.5",
+    "ScrollIt": "*",
+    "jquery": "~1.10.0",
+    "easing": "*",
+    "jeet": "~6.1.2"
+  }
+}

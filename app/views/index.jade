@@ -1,0 +1,142 @@
+extends layouts/_default
+
+include config
+
+block content
+	section.intro#intro
+		.inner
+			.logo
+				img(src="/images/BH-logo-white.svg")
+				.slogan eCommerce Reinvented
+		.rocket-cart
+			img(src="/images/BH-rocket-cart.svg")
+	#slides
+		span.waypoint(data-scroll-index="0")
+		section.sep#topline
+			.inner
+				h1 THE "BUY BUTTON" IS THE FUTURE OF HOW WE PURCHASE ACROSS THE WEB’S CONTENT
+				.divider
+				.headlines
+					img(src="/images/slides/quotes/headlines.png")
+					.little
+						a.tm(target="_blank" href="http://recode.net/2015/05/27/google-confirms-buy-button-is-coming/")
+						a.tr(target="_blank" href="http://techcrunch.com/2015/07/15/cant-buy-me-love/#.i3gpmr:HEfu")
+						a.tl(target="_blank" href="http://www.wired.com/2015/09/buy-button-important-icon-internet/")
+						a.bm(target="_blank" href="http://www.nytimes.com/2015/07/06/technology/new-simple-buy-buttonsaim-to-entice-mobile-shoppers.html?_r=1")
+						a.br(target="_blank" href="http://www.nytimes.com/2015/07/06/technology/new-simple-buy-buttonsaim-to-entice-mobile-shoppers.html?_r=1")
+						a.bl(target="_blank" href="http://www.cnet.com/news/pinterest-rolls-out-buyable-pins-feature/")
+					.big
+						a.tl(target="_blank" href="http://venturebeat.com/2015/09/22/publishers-join-facebook-and-twitter-in-rush-for-buy-buttons/")
+				.divider
+ 
+		span.waypoint(data-scroll-index="1")
+		include slides/the-problem
+		
+		
+		section.sep.results: h1 The Results tell the story...
+		span.waypoint(data-scroll-index="2")
+		include slides/status-quo		
+		
+		span.waypoint(data-scroll-index="3")
+		section.sep.the-solution
+			.inner
+				h1 The Solution
+				p Bringhub enables any publisher to add eCommerce to content and ads instantaneously!
+				#solution-animation
+					img.title(src="/images/slides/solution/solution-title.svg")
+					img(src="/images/slides/solution/solution-1.gif")
+				h2 ( Works seamlessly across all devices )
+		
+		span.waypoint(data-scroll-index="4")
+		section.sep: h1 Benefits of the Bringhub Smartcart
+		include slides/benefits
+		
+		span.waypoint(data-scroll-index="5")
+		section.sep: h1 Let's take a real look...
+		include slides/demos
+		
+		span.waypoint(data-scroll-index="6")
+		section.sep
+			.inner
+				h1 Wanna see how the SmartCart works?
+				<br />
+				p 1) <em>Publisher adds the SmartWidget code to their header or footer.</em>
+				img(src="/images/slides/how-it-works/add-code.svg")
+				p 2) <em>Presto! That’s it! The SmartWidget executes a fully automated scan of URLs and links to automatically identify shoppable items!</em>
+				img(src="/images/slides/how-it-works/how-it-works-1.svg")
+				p 3) <em>Once supported items are identified, the SmartWidget triggers the SmartCart making the content on-the-spot shoppable!</em>
+				img(src="/images/slides/how-it-works/how-it-works-2.svg")
+		
+		span.waypoint(data-scroll-index="7")
+		section.sep.dash: h1 And did we mention native analytics?
+		include slides/dash
+		
+		
+		section.sep: h1 Guess how big this market is?
+		span.waypoint(data-scroll-index="8")
+		include slides/market
+		
+		
+		section.sep: h1 How we will make money$$
+		span.waypoint(data-scroll-index="9")
+		include slides/business-model
+		
+		span.waypoint(data-scroll-index="10")
+		include slides/tech
+		
+		span.waypoint(data-scroll-index="11")
+		section.sep.ip: h1 Product Development & IP
+		include slides/ip
+		
+		span.waypoint(data-scroll-index="12")
+		include slides/timeline
+		
+		span.waypoint(data-scroll-index="13")
+		section.sep.results: h1 We support hundreds of stores with tens of millions of products.
+		include slides/supported-stores
+
+		section.sep.infographic
+			.inner
+				h1 ACCOMPLISments <br />
+				img(src="/images/slides/infographic/infographic.png")
+		
+		//span.waypoint(data-scroll-index="14")
+		//include slides/strategy
+		
+		span.waypoint(data-scroll-index="15")
+		include slides/comp
+		
+		span.waypoint(data-scroll-index="16")
+		include slides/team
+		
+		span.waypoint(data-scroll-index="17")
+		section.sep.locations
+			.inner
+				h1 Locations
+				img(src="/images/slides/locations/locations-1.svg")
+		
+		span.waypoint(data-scroll-index="18")
+		section.sep.investors
+			.inner
+				img(src="/images/slides/investors/investors.png")
+
+		include slides/financials
+		
+		span.waypoint(data-scroll-index="19")
+		
+		include slides/ask
+		
+
+		section#footer
+			.logo: img(src="/images/BH-logo-white.svg")
+			.contact
+				h2 Contact
+				a(href="mailto:dominik@bringhub.com") dominik@bringhub.com
+			.download
+				a(href="#") Download Full Presentation (PDF)
+
+			.copy
+				| &copy; 2015 Bringhub &mdash; Made in L.A.
+
+
+				

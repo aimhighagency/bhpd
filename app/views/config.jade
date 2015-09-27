@@ -1,0 +1,18 @@
+
+- var socials = [];
+- socials.push({'network': 'facebook', 'icon': 'icon-facebook', 'url': 'http://facebook.com'});
+- socials.push({'network': 'twitter', 'icon': 'icon-twitter', 'url': 'http://twitter.com'});
+- socials.push({'network': 'instagram', 'icon': 'icon-instagram', 'url': 'http://instagram.com'});
+- socials.push({'network': 'pinterest', 'icon': 'icon-pinterest', 'url': 'http://pinterest.com'});
+
+mixin navmenu(menu_items)
+	ul
+		each top_item in menu_items
+			li
+				- var linkatts = {'href': top_item.link, 'class': top_item.class}
+				a()&attributes(linkatts)= top_item.title
+
+mixin list_links(links)
+	each link in links
+		a(href="#") #{link}
+

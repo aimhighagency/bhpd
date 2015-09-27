@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    
+    title static test
+
+    //META
+    meta(charset="utf-8")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,300,800,400' rel='stylesheet' type='text/css')
+
+    link(rel="stylesheet", href="/styles/style.css") 
+
+    script(src="/js/modernizr.js")
+
+  body
+    include ../config
+    include ../modules/_nav
+
+
+    
+    #main 
+      block content
+
+    include ../modules/_footer
+
+    #mobile-alert
+        .inner
+            .logo: img(src="/images/BH-logo-white.svg")
+            .alert Shucks, this presentaiton was not intended for mobile viewing. But you can download the PDF by licking on the link below:
+            .download
+                a(href="#") Download (PDF)
+    
+    script(src="/js/jquery.min.js")
+    script(src="/js/imagesloaded.pkgd.min.js")
+    script(src="/js/easing-min.js")
+    script(src="/js/scrollIt.min.js")
+    script(src="/js/masonry.js")
+    script(src="/js/countUp.min.js")
+    script(src="/js/Chart.min.js")
+    script(src="/js/snap.svg-min.js")
+    script(src="/js/jquery.canvasjs.min.js")
+    //- script(src="/js/jquery.svganim.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js")
+    script(src="/js/init.js")
+

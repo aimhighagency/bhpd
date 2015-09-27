@@ -1,0 +1,6 @@
+include ../config
+
+.social-icons
+	each social in socials
+		- var attrs = {'href': social.url, 'class': social.icon}
+		a()&attributes(attrs)

@@ -142,7 +142,7 @@ ol{
   }
 
   .logo{
-    max-width: 400px;
+    max-width: 300px;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -158,18 +158,18 @@ ol{
   li{
     margin-bottom: 5px;
     float: left;
-    width: 49%;
+    width: 32%;
     margin-right: .5%;
     margin-left: .5%;
 
     a{
       @include trans_prop;
-      font-size: 20px;
+      font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
       display: block;
       background-color: darken($color_main, 5%);
-      padding: 10px 0;
+      padding: 5px 0;
      // border-bottom: darken($color_main, 5%) 2px solid;
 
       &:hover{
@@ -186,7 +186,7 @@ ol{
 
 .download{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 
     a{
       text-transform: uppercase;
@@ -390,7 +390,7 @@ ol{
 }
 
 .stats{
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 100;
     }
 
@@ -867,6 +867,19 @@ p.tiny{
     padding: 40px;
     min-height: 500px;
   }
+
+  .part{
+    position: relative;
+  }
+
+  .cover{
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: lighten($color_main, 60%);
+  }
 }
 
 .infographic{
@@ -916,11 +929,13 @@ p.tiny{
 
 .member{
   @extend %clearfix;
-  width: 25%;
-  float: left;
+  width: 24%;
+  display: inline-block;
+  //float: left;
   text-align: left;
   padding: 10px;
   //margin: .5%;
+  vertical-align: top;
   
   .inner{
     @extend %clearfix;
@@ -959,7 +974,7 @@ p.tiny{
 
   h3{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: left;
     padding-bottom: 10px;
@@ -976,7 +991,7 @@ p.tiny{
   }
 
   &.exec{
-    width: 33.3%;
+    width: 32%;
     .image{
       width: 40%;
     }
@@ -991,6 +1006,10 @@ p.tiny{
   }
 }
 
+h2.title{
+  margin-top: 40px;
+  clear: both;
+}
 
 
 

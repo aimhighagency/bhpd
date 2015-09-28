@@ -600,6 +600,7 @@ $( document ).ready(function() {
                 onAnimationComplete: function(){    
                     this.showTooltip(this.segments, true);          
                 },
+                tooltipEvents: [] 
                 
             });
 
@@ -616,7 +617,7 @@ $( document ).ready(function() {
             var store_roadmap_chart = new Chart(store_roadmap_canvas).Line(store_roadmap_data, {
                 animationEasing: "easeInOutQuad",
                 responsive: true,
-                tooltipTemplate: "<%= value %>",
+                tooltipTemplate: "<%= value %> STORES",
                 showTooltips: true,
                 onAnimationComplete: function(){    
                     this.showTooltip(this.datasets[0].points, true);          

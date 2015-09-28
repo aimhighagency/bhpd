@@ -143,7 +143,7 @@ $( document ).ready(function() {
     }
 
     function kFormatter(num) {
-        return num > 999 ? (num/1000) + 'K' : num
+        return num > 999 ? (num/1000).toFixed(0) + 'K' : num
     }
 
     function mFormatter(num) {
@@ -188,59 +188,7 @@ $( document ).ready(function() {
 
     var us_market_canvas = $("#us-market").get(0).getContext("2d");
 
-    // var sales_data = {
-    //     labels: ["Jul-15", "Aug-15", "Sep-15", "Oct-15", "Nov-15", "Dec-15", "Jan-16", "Feb-16", "Mar-16", "Apr-16", "May-16", "Jun-16", "Jul-16", "Aug-16", "Sep-16", "Oct-16", "Nov-16", "Dec-16", "Jan-17", "Feb-17", "Mar-17", "Apr-17", "May-17", "Jun-17", "Jul-17", "Aug-17", "Sep-17", "Oct-17", "Nov-17", "Dec-17"],
-    //     datasets: [
-    //         {
-    //             label: "My First dataset",
-    //             fillColor: "#80b1d2",
-    //             strokeColor: "#495259",
-    //             pointColor: "#495259",
-    //             pointStrokeColor: "#fff",
-    //             pointHighlightFill: "#fff",
-    //             pointHighlightStroke: "rgba(220,220,220,1)",
-    //             data: [4846.03 , 7499.01 , 14793.48 , 52800.00 , 158400.00 , 261800.00 , 221760.00 , 332640.00 , 498960.00 , 1020600.00 , 1530900.00 , 2296350.00 , 3444525.00 , 5166787.50 , 11302347.66 , 21797384.77 , 39235292.58 , 58852938.87 , 42913601.26 , 45059281.32 , 47312245.39 , 49677857.66 , 57957500.60 , 60855375.63 , 63898144.41 , 67093051.63 , 107013417.35 , 157014514.08 , 216680029.43 , 249182033.84 ]
-    //         }
-    //     ]
-    // };
-
-    // var sales_canvas = $("#sales").get(0).getContext("2d");
-
-    // var net_rev_data = {
-    //     labels: ["Mar-16", "Apr-16", "May-16", "Jun-16", "Jul-16", "Aug-16", "Sep-16", "Oct-16", "Nov-16", "Dec-16", "Jan-17", "Feb-17", "Mar-17", "Apr-17", "May-17", "Jun-17", "Jul-17", "Aug-17", "Sep-17", "Oct-17", "Nov-17", "Dec-17"],
-    //     datasets: [
-    //         {
-    //             label: "My First dataset",
-    //             fillColor: "#80b1d2",
-    //             strokeColor: "#495259",
-    //             pointColor: "#495259",
-    //             pointStrokeColor: "#fff",
-    //             pointHighlightFill: "#fff",
-    //             pointHighlightStroke: "rgba(220,220,220,1)",
-    //             data: [ 12474.00,  25515.00,  38272.50,  57408.75,  86113.13,  129169.69,  282558.69,  544934.62,  980882.31,  1471323.47,  1287408.04,  1351778.44,  1419367.36,  1490335.73,  1738725.02,  1825661.27,  1916944.33,  2012791.55,  3210402.52,  4710435.42,  6500400.88,  7475461.02]
-    //         }
-    //     ]
-    // };
-
-    // var net_rev_canvas = $("#net-rev").get(0).getContext("2d");
-
-    // var orders_data = {
-    //     labels: ["Jul-15", "Aug-15", "Sep-15", "Oct-15", "Nov-15", "Dec-15", "Jan-16", "Feb-16", "Mar-16", "Apr-16", "May-16", "Jun-16", "Jul-16", "Aug-16", "Sep-16", "Oct-16", "Nov-16", "Dec-16", "Jan-17", "Feb-17", "Mar-17", "Apr-17", "May-17", "Jun-17", "Jul-17", "Aug-17", "Sep-17", "Oct-17", "Nov-17", "Dec-17"],
-    //     datasets: [
-    //         {
-    //             label: "My First dataset",
-    //             fillColor: "#80b1d2",
-    //             strokeColor: "#495259",
-    //             pointColor: "#495259",
-    //             pointStrokeColor: "#fff",
-    //             pointHighlightFill: "#fff",
-    //             pointHighlightStroke: "rgba(220,220,220,1)",
-    //             data: [ 16, 41, 114, 330, 990, 1540, 1848, 2772, 4158, 8505, 12758, 19136, 28704, 43057, 80731, 121097, 217974, 326961, 343309, 360474, 378498, 397423, 463660, 486843, 511185, 536744, 738024, 848727, 1171243, 1346930]
-    //         }
-    //     ]
-    // };
-
-    // var orders_canvas = $("#orders").get(0).getContext("2d");
+    
     
     var store_roadmap_data = {
         labels: ["Q4 2015", "Q1 2016", "Q2 20016", "Q3 2016", "Q4 2016"],
@@ -290,7 +238,7 @@ $( document ).ready(function() {
             lineColor: "#dddddd",
             gridColor: "#dddddd",
             labelFormatter: function ( e ) {
-                return "$" + numFormater(e.value);  
+                return numFormater(e.value);  
             }  
         },
 
@@ -348,6 +296,9 @@ $( document ).ready(function() {
             fontSize: 20,
             fontColor: "#ffffff",
             cornerRadius: 0,
+            contentFormatter: function ( e ) {
+               return "$" +  numFormater(e.entries[0].dataPoint.y);
+            } 
             
         },
 
@@ -415,6 +366,9 @@ $( document ).ready(function() {
             fontSize: 20,
             fontColor: "#ffffff",
             cornerRadius: 0,
+            contentFormatter: function ( e ) {
+               return "$" +  numFormater(e.entries[0].dataPoint.y);
+            }  
             
         },
 

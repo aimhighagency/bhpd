@@ -249,36 +249,112 @@ $( document ).ready(function() {
         markerSize: 8,
         markerColor: "#495259",
         dataPoints: [
-            {y: 16, label: "Jul-15"},
-            {y: 41, label: "Aug-15"},
-            {y: 114, label: "Sep-15"},
-            {y: 330, label: "Oct-15"},
-            {y: 990, label: "Nov-15"},
-            {y: 1540, label: "Dec-15"},
-            {y: 1848, label: "Jan-16"},
-            {y: 2772, label: "Feb-16"},
-            {y: 4158, label: "Mar-16"},
-            {y: 8505, label: "Apr-16"},
-            {y: 12758, label: "May-16"},
-            {y: 19136, label: "Jun-16"},
-            {y: 28704, label: "Jul-16"},
-            {y: 43057, label: "Aug-16"},
-            {y: 80731, label: "Sep-16"},
-            {y: 121097, label: "Oct-16"},
-            {y: 217974, label: "Nov-16"},
-            {y: 326961, label: "Dec-16"},
-            {y: 343309, label: "Jan-17"},
-            {y: 360474, label: "Feb-17"},
-            {y: 378498, label: "Mar-17"},
-            {y: 397423, label: "Apr-17"},
-            {y: 463660, label: "May-17"},
-            {y: 486843, label: "Jun-17"},
-            {y: 511185, label: "Jul-17"},
-            {y: 536744, label: "Aug-17"},
-            {y: 738024, label: "Sep-17"},
-            {y: 848727, label: "Oct-17"},
-            {y: 1171243, label: "Nov-17"},
-            {y: 1346930, label: "Dec-17"}
+            {y: 78, label: "Jul-15"},
+            {y: 250, label: "Aug-15"},
+            {y: 462, label: "Sep-15"},
+            {y: 781, label: "Oct-15"},
+            {y: 1259, label: "Nov-15"},
+            {y: 1519, label: "Dec-15"},
+            {y: 1646, label: "Jan-16"},
+            {y: 2470, label: "Feb-16"},
+            {y: 3704, label: "Mar-16"},
+            {y: 5557, label: "Apr-16"},
+            {y: 8335, label: "May-16"},
+            {y: 12502, label: "Jun-16"},
+            {y: 24399, label: "Jul-16"},
+            {y: 36598, label: "Aug-16"},
+            {y: 54897, label: "Sep-16"},
+            {y: 104305, label: "Oct-16"},
+            {y: 156457, label: "Nov-16"},
+            {y: 234685, label: "Dec-16"},
+            {y: 183098, label: "Jan-17"},
+            {y: 192253, label: "Feb-17"},
+            {y: 220790, label: "Mar-17"},
+            {y: 231830, label: "Apr-17"},
+            {y: 243422, label: "May-17"},
+            {y: 255593, label: "Jun-17"},
+            {y: 388501, label: "Jul-17"},
+            {y: 407926, label: "Aug-17"},
+            {y: 448718, label: "Sep-17"},
+            {y: 651822, label: "Oct-17"},
+            {y: 749596, label: "Nov-17"},
+            {y: 862035, label: "Dec-17"}
+        ]
+      }
+      ]
+    });
+
+var chart_potentials = new CanvasJS.Chart("chartPotentialsContainer",
+    {
+        animationEnabled: true,
+        animationDuration: 2000,
+        backgroundColor: false,
+        toolTip: {
+            backgroundColor: "#495259",
+            borderThickness: 0,
+            fontSize: 20,
+            fontColor: "#ffffff",
+            cornerRadius: 0,
+            
+        },
+
+        axisX: {
+            lineThickness: 1,
+            gridThickness: 1,
+            labelAngle: -40,
+            interval: 1,
+            labelFontSize: 12,
+            lineColor: "#dddddd",
+            gridColor: "#dddddd"
+        },
+
+        axisY: {
+            lineThickness: 1,
+            gridThickness: 1,
+            lineColor: "#dddddd",
+            gridColor: "#dddddd",
+            labelFormatter: function ( e ) {
+                return numFormater(e.value);  
+            }  
+        },
+
+       data: [
+      {
+        type: "splineArea",
+        color: "#80b1d2",
+        markerSize: 8,
+        markerColor: "#495259",
+        dataPoints: [
+            {y: 6000, label: "Jul-15"},
+            {y: 15600, label: "Aug-15"},
+            {y: 30800, label: "Sep-15"},
+            {y: 50400, label: "Oct-15"},
+            {y: 81200, label: "Nov-15"},
+            {y: 98000, label: "Dec-15"},
+            {y: 117600, label: "Jan-16"},
+            {y: 176400, label: "Feb-16"},
+            {y: 264600, label: "Mar-16"},
+            {y: 396900, label: "Apr-16"},
+            {y: 595350, label: "May-16"},
+            {y: 893025, label: "Jun-16"},
+            {y: 1435219, label: "Jul-16"},
+            {y: 2152828, label: "Aug-16"},
+            {y: 3229242, label: "Sep-16"},
+            {y: 5489712, label: "Oct-16"},
+            {y: 8234568, label: "Nov-16"},
+            {y: 12351851, label: "Dec-16"},
+            {y: 12206535, label: "Jan-17"},
+            {y: 12816862, label: "Feb-17"},
+            {y: 14719365, label: "Mar-17"},
+            {y: 15455333, label: "Apr-17"},
+            {y: 16228100, label: "May-17"},
+            {y: 17039505, label: "Jun-17"},
+            {y: 19425036, label: "Jul-17"},
+            {y: 20396288, label: "Aug-17"},
+            {y: 22435916, label: "Sep-17"},
+            {y: 27159267, label: "Oct-17"},
+            {y: 31233157, label: "Nov-17"},
+            {y: 35918131, label: "Dec-17"}
         ]
       }
       ]
@@ -328,28 +404,28 @@ $( document ).ready(function() {
         markerSize: 8,
         markerColor: "#495259",
         dataPoints: [
-            {y: 12474.00, label: "Mar-16"},
-            {y: 25515.00, label: "Apr-16"},
-            {y: 38272.50, label: "May-16"},
-            {y: 57408.75, label: "Jun-16"},
-            {y: 86113.13, label: "Jul-16"},
-            {y: 129169.69, label: "Aug-16"},
-            {y: 282558.69, label: "Sep-16"},
-            {y: 544934.62, label: "Oct-16"},
-            {y: 980882.31, label: "Nov-16"},
-            {y: 1471323.47, label: "Dec-16"},
-            {y: 1287408.04, label: "Jan-17"},
-            {y: 1351778.44, label: "Feb-17"},
-            {y: 1419367.36, label: "Mar-17"},
-            {y: 1490335.73, label: "Apr-17"},
-            {y: 1738725.02, label: "May-17"},
-            {y: 1825661.27, label: "Jun-17"},
-            {y: 1916944.33, label: "Jul-17"},
-            {y: 2012791.55, label: "Aug-17"},
-            {y: 3210402.52, label: "Sep-17"},
-            {y: 4710435.42, label: "Oct-17"},
-            {y: 6500400.88, label: "Nov-17"},
-            {y: 7475461.02,  label: "Dec-17"}
+            {y: 11113.20, label: "Mar-16"},
+            {y: 16669.80, label: "Apr-16"},
+            {y: 25004.70, label: "May-16"},
+            {y: 37507.05, label: "Jun-16"},
+            {y: 73196.16, label: "Jul-16"},
+            {y: 109794.23, label: "Aug-16"},
+            {y: 192139.91, label: "Sep-16"},
+            {y: 417218.09, label: "Oct-16"},
+            {y: 625827.14, label: "Nov-16"},
+            {y: 938740.70, label: "Dec-16"},
+            {y: 686617.62, label: "Jan-17"},
+            {y: 720948.50, label: "Feb-17"},
+            {y: 827964.29, label: "Mar-17"},
+            {y: 869362.51, label: "Apr-17"},
+            {y: 912830.63, label: "May-17"},
+            {y: 958472.17, label: "Jun-17"},
+            {y: 1456877.69, label: "Jul-17"},
+            {y: 1529721.58, label: "Aug-17"},
+            {y: 1951924.73, label: "Sep-17"},
+            {y: 3617614.40, label: "Oct-17"},
+            {y: 4160256.56, label: "Nov-17"},
+            {y: 4784295.05, label: "Dec-17"}
         ]
       }
       ]
@@ -400,36 +476,36 @@ $( document ).ready(function() {
         markerSize: 8,
         markerColor: "#495259",
         dataPoints: [
-            {label: "Jul-15", y: 4846.03 },
-            {label: "Aug-15", y: 7499.01 },
-            {label: "Sep-15", y: 14793.48 },
-            {label: "Oct-15", y: 52800.00 },
-            {label: "Nov-15", y: 158400.00 },
-            {label: "Dec-15", y: 261800.00 },
-            {label: "Jan-16", y: 221760.00 },
-            {label: "Feb-16", y: 332640.00 },
-            {label: "Mar-16", y: 498960.00 },
-            {label: "Apr-16", y: 1020600.00 },
-            {label: "May-16", y: 1530900.00 },
-            {label: "Jun-16", y: 2296350.00 },
-            {label: "Jul-16", y: 3444525.00 },
-            {label: "Aug-16", y: 5166787.50 },
-            {label: "Sep-16", y: 11302347.66 },
-            {label: "Oct-16", y: 21797384.77 },
-            {label: "Nov-16", y: 39235292.58 },
-            {label: "Dec-16", y: 58852938.87 },
-            {label: "Jan-17", y: 42913601.26 },
-            {label: "Feb-17", y: 45059281.32 },
-            {label: "Mar-17", y: 47312245.39 },
-            {label: "Apr-17", y: 49677857.66 },
-            {label: "May-17", y: 57957500.60 },
-            {label: "Jun-17", y: 60855375.63 },
-            {label: "Jul-17", y: 63898144.41 },
-            {label: "Aug-17", y: 67093051.63 },
-            {label: "Sep-17", y: 107013417.35 },
-            {label: "Oct-17", y: 157014514.08 },
-            {label: "Nov-17", y: 216680029.43 },
-            {label: "Dec-17", y: 249182033.84}
+            {label: "Jul-15", y: 9282.00},
+            {label: "Aug-15", y: 28704.00},
+            {label: "Sep-15", y: 55440.00},
+            {label: "Oct-15", y: 93744.00},
+            {label: "Nov-15", y: 163618.00},
+            {label: "Dec-15", y: 197470.00},
+            {label: "Jan-16", y: 197568.00},
+            {label: "Feb-16", y: 296352.00},
+            {label: "Mar-16", y: 444528.00},
+            {label: "Apr-16", y: 666792.00},
+            {label: "May-16", y: 1000188.00},
+            {label: "Jun-16", y: 1500282.00},
+            {label: "Jul-16", y: 2927846.25},
+            {label: "Aug-16", y: 4391769.38},
+            {label: "Sep-16", y: 7685596.41},
+            {label: "Oct-16", y: 16688723.63},
+            {label: "Nov-16", y: 25033085.44},
+            {label: "Dec-16", y: 37549628.16},
+            {label: "Jan-17", y: 22887254.00},
+            {label: "Feb-17", y: 24031616.70},
+            {label: "Mar-17", y: 27598809.81},
+            {label: "Apr-17", y: 28978750.30},
+            {label: "May-17", y: 30427687.81},
+            {label: "Jun-17", y: 31949072.20},
+            {label: "Jul-17", y: 48562589.75},
+            {label: "Aug-17", y: 50990719.24},
+            {label: "Sep-17", y: 65064157.75},
+            {label: "Oct-17", y: 120587146.81},
+            {label: "Nov-17", y: 138675218.83},
+            {label: "Dec-17", y: 159476501.66}
         ]
       }
       ]
@@ -646,56 +722,16 @@ $( document ).ready(function() {
         })
         .addTo(onCenterController);
 
+    var potentials_scene = new ScrollMagic.Scene({triggerElement: ".potentials"})
+        .on("start", function (event) {
+            chart_potentials.render();
+        })
+        .addTo(onCenterController);
+
 // THE BENIFITS
-    // var benefits = new ScrollMagic.Scene({triggerElement: "#benefits"})
-    //     .setClassToggle("#benefits .cover-1", "current")
-    //     .addTo(onLeaveController);
-
-    // var statusquo_monitization = new ScrollMagic.Scene({triggerElement: "#benefits .monitization"})
-    //     .setClassToggle("#benefits .cover-2", "current")
-    //     .addTo(onCenterController);
-
-    // var benefits_data = new ScrollMagic.Scene({triggerElement: "#benefits .data"})
-    //     .setClassToggle("#benefits .cover-3", "current")
-    //     .addTo(onCenterController);
-
-    // var benefits_user_exp = new ScrollMagic.Scene({triggerElement: "#benefits .user-exp"})
-    //     .setClassToggle("#benefits .cover-4", "current")
-    //     .addTo(onCenterController);
-
-    // var bh_conversion = new ScrollMagic.Scene({triggerElement: "#benefits .conversions"})
-    //      .on("start", function (event) {
-    //         bh_conversions_chart = new Chart(bh_conversions_canvas).Doughnut(bh_conversions_data, {
-    //         showTooltips: false,
-    //         segmentStrokeColor: "#ccd1d5"
-    //         });
-    //     })
-    //     .addTo(onCenterController);
-
-    // var bh_commissions = new ScrollMagic.Scene({triggerElement: "#benefits .commissions"})
-    //      .on("start", function (event) {
-    //         bh_commissions_chart = new Chart(bh_commissions_canvas).Doughnut(bh_commissions_data, {
-    //                 showTooltips: false,
-    //                 tooltipTemplate: "<%= label %>",
-    //                 showTooltips: true,
-    //                 segmentStrokeColor: "#ccd1d5",
-    //                 onAnimationComplete: function(){    
-    //                   //  this.showTooltip(this.segments, true);          
-    //                 },
-
-    //         });
-    //     })
-    //     .addTo(onCenterController);
-
+   
 
 // THE FUTURE
-    // var future1 = new ScrollMagic.Scene({triggerElement: ".slide-future"})
-    //     .setClassToggle(".slide-future .cover-1", "current")
-    //     .addTo(onLeaveController);
-
-    // var future2 = new ScrollMagic.Scene({triggerElement: ".slide-future .trigger-2"})
-    //     .setClassToggle(".slide-future .cover-2", "current")
-    //     .addTo(onCenterController);
 
 
     var timline_1 = new ScrollMagic.Scene({triggerElement: ".timeline .trigger-1", offset: -200})

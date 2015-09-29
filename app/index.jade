@@ -1,6 +1,6 @@
-extends layouts/_default
+extends views/layouts/_default
 
-include config
+include views/config
 
 block content
 	section.intro#intro
@@ -30,12 +30,12 @@ block content
 				.divider
  
 		span.waypoint(data-scroll-index="1")
-		include slides/the-problem
+		include views/slides/the-problem
 		
 		
 		section.sep.results: h1 The Results tell the story...
 		span.waypoint(data-scroll-index="2")
-		include slides/status-quo		
+		include views/slides/status-quo		
 		
 		span.waypoint(data-scroll-index="3")
 		section.sep.the-solution
@@ -49,11 +49,11 @@ block content
 		
 		span.waypoint(data-scroll-index="4")
 		section.sep: h1 Benefits of the Bringhub Smartcart
-		include slides/benefits
+		include views/slides/benefits
 		
 		span.waypoint(data-scroll-index="5")
 		section.sep: h1 Let's take a real look...
-		include slides/demos
+		include views/slides/demos
 		
 		span.waypoint(data-scroll-index="6")
 		section.sep
@@ -69,31 +69,31 @@ block content
 		
 		span.waypoint(data-scroll-index="7")
 		section.sep.dash: h1 And did we mention native analytics?
-		include slides/dash
+		include views/slides/dash
 		
 		
 		section.sep: h1 Guess how big this market is?
 		span.waypoint(data-scroll-index="8")
-		include slides/market
+		include views/slides/market
 		
 		
 		section.sep: h1 How we will make money$$
 		span.waypoint(data-scroll-index="9")
-		include slides/business-model
+		include views/slides/business-model
 		
 		span.waypoint(data-scroll-index="10")
-		include slides/tech
+		include views/slides/tech
 		
 		span.waypoint(data-scroll-index="11")
 		section.sep.ip: h1 Product Development & IP
-		include slides/ip
+		include views/slides/ip
 		
 		span.waypoint(data-scroll-index="12")
-		include slides/timeline
+		include views/slides/timeline
 		
 		span.waypoint(data-scroll-index="13")
 		section.sep.results: h1 We support hundreds of stores with tens of millions of products.
-		include slides/supported-stores
+		include views/slides/supported-stores
 
 		section.sep.infographic
 			.inner
@@ -101,13 +101,13 @@ block content
 				img(src="/images/slides/infographic/infographic.jpg")
 		
 		//span.waypoint(data-scroll-index="14")
-		//include slides/strategy
+		//include views/slides/strategy
 		
 		span.waypoint(data-scroll-index="15")
-		include slides/comp
+		include views/slides/comp
 		
 		span.waypoint(data-scroll-index="16")
-		include slides/team
+		include views/slides/team
 		
 		span.waypoint(data-scroll-index="17")
 		section.sep.locations
@@ -120,11 +120,11 @@ block content
 			.inner
 				img(src="/images/slides/investors/investors.png")
 
-		include slides/financials
+		include views/slides/financials
 		
 		span.waypoint(data-scroll-index="19")
 		
-		include slides/ask
+		include views/slides/ask
 		
 
 		section#footer
